@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header text-white bg-333 text-center ">
+    <header class="header text-white bg-333 text-center">
       <div class="container">
         <h1 class="mb-10">Company Name</h1>
         <nav>
@@ -20,65 +20,80 @@
         </nav>
       </div>
     </header>
+    <main>
+      <section id="home" class="section text-center">
+        <div class="container">
+          <h2 class="mb-10">Welcome to Our Website</h2>
+          <p>This is the home section.</p>
+        </div>
+      </section>
 
-    <section id="home" class="section text-center ">
-      <div class="container">
-        <h2 class="mb-10">Welcome to Our Website</h2>
-        <p>This is the home section.</p>
-      </div>
-    </section>
+      <section id="services" class="section text-center">
+        <div class="container">
+          <h2>Our Services</h2>
+          <div class="services-grid">
 
-    <section id="services" class="section text-center ">
-      <div class="container">
-        <h2>Our Services</h2>
-        <div class="services-grid">
-          <div class="service">
-            <h3 class="mb-10">Web Design</h3>
-            <p>Beautiful and responsive web designs tailored to your needs.</p>
-          </div>
-          <div class="service">
-            <h3>Development</h3>
-            <p>
-              Full-stack web development solutions using modern technologies.
-            </p>
-          </div>
-          <div class="service">
-            <h3>SEO Optimization</h3>
-            <p>Boost your online presence with our SEO strategies.</p>
+            <article class="service">
+              <h3 class="mb-10">Web Design</h3>
+              <p>
+                Beautiful and responsive web designs tailored to your needs.
+              </p>
+            </article>
+
+            <article class="service">
+              <h3>Development</h3>
+              <p>
+                Full-stack web development solutions using modern technologies.
+              </p>
+            </article>
+
+            <article class="service">
+              <h3>SEO Optimization</h3>
+              <p>Boost your online presence with our SEO strategies.</p>
+            </article>
+            
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="about" class="section text-center ">
-      <div class="container">
-        <h2>About Us</h2>
-        <p>Learn about our team and our mission.</p>
-      </div>
-    </section>
+      <section id="about" class="section text-center">
+        <div class="container">
+          <h2>About Us</h2>
+          <p>Learn about our team and our mission.</p>
+        </div>
+      </section>
 
-    <section id="contact" class="section text-center ">
-      <div class="container">
-        <h2>Contact Us</h2>
-        <form id="contactForm" class="contact-form">
-          <label for="name">Name:</label>
-          <input class="mb-10" type="text" id="name" name="name" required />
-          <label for="email">Email:</label>
-          <input class="mb-10" type="email" id="email" name="email" required />
-          <label for="message">Message:</label>
-          <textarea
-            class="mb-10"
-            id="message"
-            name="message"
-            rows="4"
-            required
-          ></textarea>
-          <button type="submit" class="text-white bg-333">Send Message</button>
-        </form>
-      </div>
-    </section>
+      <section id="contact" class="section text-center">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <form id="contactForm" class="contact-form">
+            <label for="name">Name:</label>
+            <input class="mb-10" type="text" id="name" name="name" required />
+            <label for="email">Email:</label>
+            <input
+              class="mb-10"
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
+            <label for="message">Message:</label>
+            <textarea
+              class="mb-10"
+              id="message"
+              name="message"
+              rows="4"
+              required
+            ></textarea>
+            <button type="submit" class="text-white bg-333">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
 
-    <footer class="footer text-white bg-333 text-center ">
+    <footer class="footer text-white bg-333 text-center">
       <div class="container">
         <p>&copy; 2024 Company Name. All rights reserved.</p>
       </div>
