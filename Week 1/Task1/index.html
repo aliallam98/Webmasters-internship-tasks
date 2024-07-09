@@ -290,7 +290,7 @@
     <section class="about">
       <div class="container">
         <div class="left-part">
-          <img src="/images/Screenshot (60).png" alt="dots">
+          <img src="/images/Screenshot (60).png" alt="dots" />
           <h2>What they say about WOC</h2>
           <p>More than 3000 users have been helped by World Online Course</p>
           <p class="quote-author">
@@ -329,6 +329,7 @@
         </div>
       </div>
     </section>
+
     <footer>
       <div class="container">
         <div class="footer-top">
@@ -367,5 +368,15 @@
         <i class="fa-solid fa-arrow-up"></i>
       </a>
     </div>
+
+
+    <script>
+      const menuIcon = document.querySelector(".menu-icon");
+      const mobNav = document.getElementById("mobNav"); 
+      
+      menuIcon.addEventListener("click", function() {
+        mobNav.classList.toggle("hidden"); 
+      });
+      </script>
   </body>
 </html>
