@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.openMenu {
-  height: 100%;
-  display: block;
+html{
+  scroll-behavior: smooth;
 }

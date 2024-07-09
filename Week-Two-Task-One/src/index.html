@@ -12,9 +12,15 @@
       <nav class="container flex items-center justify-between">
         <img src="./images/logo.png" alt="logo" class="h-8 lg:h-10" />
         <ul class="hidden lg:flex items-center gap-4" id="menuLinks">
-          <li class="text-black font-medium p-4">Home</li>
-          <li class="text-grayHeader font-medium p-4">Services</li>
-          <li class="text-grayHeader font-medium p-4">Contact</li>
+          <li class="text-black font-medium p-4">
+            <a href="#home">Home</a>
+          </li>
+          <li class="text-grayHeader font-medium p-4">
+            <a href="#services">Services</a>
+          </li>
+          <li class="text-grayHeader font-medium p-4">
+            <a href="#newsletter">Contact</a>
+          </li>
           <li class="text-grayHeader font-medium p-4">Support</li>
         </ul>
 
@@ -45,7 +51,7 @@
       </nav>
     </header>
     <main>
-      <section class="landing py-10 md:py-20">
+      <section class="landing py-10 md:py-20" id="home">
         <div class="relative container flex flex-col">
           <div>
             <h1 class="text-4xl md:text-7xl lg:text-9xl font-semibold">
@@ -99,7 +105,7 @@
         </div>
       </section>
 
-      <section class="services py-10 md:py-20">
+      <section class="services py-10 md:py-20" id="services">
         <div class="container">
           <div class="flex items-center gap-4 mb-14">
             <span class="block h-[1px] w-16 bg-black"></span>
@@ -148,24 +154,82 @@
           </div>
         </div>
       </section>
-      <section class="py-10 md:py-20">
+
+      <section>
+        <div class="container grid lg:grid-cols-2">
+          <img
+            src="./images/Mask group.png"
+            alt="furniture"
+            class="h-[420px] w-[600px] mx-auto object-contain mb-10 lg:mb-0"
+          />
+          <div>
+            <h1 class="text-2xl md:text-3xl lg:text4xl font-semibold">
+              Designing Your Dream <br />
+              With Brilliance
+            </h1>
+            <p class="text-xl md:text-2xl text-grayHeader my-10">
+              Elevate your spaces with bespoke interior designs that reflect
+              <br />
+              your unique style and aspirations, crafted with precision and
+              <br />
+              brilliance for an unforgettable living experience
+            </p>
+            <div class="lg:pr-20">
+              <div
+                class="flex items-center justify-between border-b border-grayHeader/50 p-6 pl-0"
+              >
+                <h3 class="font-semibold text-2xl">
+                  Living Room Interior Design
+                </h3>
+                <img src="./images/plus.png" alt="plus" class="size-8" />
+              </div>
+              <div
+                class="flex items-center justify-between border-b border-grayHeader/50 p-6 pl-0"
+              >
+                <h3 class="font-semibold text-2xl">
+                  Commercial Office Room Interior Design
+                </h3>
+                <img src="./images/plus.png" alt="plus" class="size-8" />
+              </div>
+              <button class="bg-black px-10 py-3 max-w-fit text-white mt-8 rounded-md">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-10 md:py-20" id="newsletter">
         <div class="relative container">
-          <h1 class="text-center text-2xl md:text-3xl lg:text-4xl font-semibold">
+          <h1
+            class="text-center text-2xl md:text-3xl lg:text-4xl font-semibold"
+          >
             Subscribe to Our Newsletter <br />
             for Design Insights
           </h1>
-          <p class="text-center text-xl  lg:text-2xl  mt-10 text-grayHeader ">
-            Be the first to discover trends, inspirations, and special offers as <br>
+          <p class="text-center text-xl lg:text-2xl mt-10 text-grayHeader">
+            Be the first to discover trends, inspirations, and special offers as
+            <br />
             we bring the world of design directly to your inbox
           </p>
-          <div class="mx-auto border flex max-sm:flex-col items-center shadow-md mt-10 md:mt-0 md:absolute bg-white md:-bottom-[120px] md:left-1/2 md:-translate-x-1/2 p-2 rounded-md md:w-3/4 lg:w-1/2">
-            <input type="text" placeholder="Enter your email address" class="p-4 w-full outline-none placeholder-grayHeader">
-            <button class="bg-black px-12 py-4 text-white rounded-md max-sm:w-full">Subscribe</button>
+          <div
+            class="mx-auto border flex max-sm:flex-col items-center shadow-md mt-10 md:mt-0 md:absolute bg-white md:-bottom-[120px] md:left-1/2 md:-translate-x-1/2 p-2 rounded-md md:w-3/4 lg:w-1/2"
+          >
+            <input
+              type="text"
+              placeholder="Enter your email address"
+              class="p-4 w-full outline-none placeholder-grayHeader"
+            />
+            <button
+              class="bg-black px-12 py-4 text-white rounded-md max-sm:w-full"
+            >
+              Subscribe
+            </button>
           </div>
         </div>
       </section>
     </main>
-    <footer class="bg-mainBlackColor py-10  md:py-32">
+    <footer class="bg-mainBlackColor py-10 md:py-32">
       <div
         class="container grid gap-10 sm:grid-cols-2 sm:gap-20 lg:grid-cols-4 lg:gap-10"
       >
