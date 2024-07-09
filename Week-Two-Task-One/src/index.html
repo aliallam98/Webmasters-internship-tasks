@@ -8,24 +8,61 @@
     <title>Document</title>
   </head>
   <body>
-    <header></header>
+    <header class="py-6">
+      <nav class="container flex items-center justify-between">
+        <img src="./images/logo.png" alt="logo" class="h-8 lg:h-10" />
+        <ul class="hidden lg:flex items-center gap-4" id="menuLinks">
+          <li class="text-black font-medium p-4">Home</li>
+          <li class="text-grayHeader font-medium p-4">Services</li>
+          <li class="text-grayHeader font-medium p-4">Contact</li>
+          <li class="text-grayHeader font-medium p-4">Support</li>
+        </ul>
+
+        <div>
+          <button
+            class="hidden lg:block bg-black py-3 px-10 text-white rounded-md"
+          >
+            Sign Up
+          </button>
+          <img
+            src="./images/menu.png"
+            alt="menuIcon"
+            id="menuButton"
+            class="menu-icon lg:hidden size-8"
+          />
+        </div>
+      </nav>
+
+      <nav class="hidden" id="mobNav">
+        <ul class="transition flex flex-col items-center gap-4">
+          <li class="text-black font-medium p-4">Home</li>
+          <li class="text-grayHeader font-medium p-4">Services</li>
+          <li class="text-grayHeader font-medium p-4">Contact</li>
+          <li class="text-grayHeader font-medium p-4">Support</li>
+          <button class="bg-black py-3 px-10 text-white rounded-md">
+            Sign Up
+          </button>
+        </ul>
+      </nav>
+    </header>
     <main>
       <section class="services py-10 md:py-20">
         <div class="container">
-          <div class="flex items-center  gap-4 mb-14">
+          <div class="flex items-center gap-4 mb-14">
             <span class="block h-[1px] w-16 bg-black"></span>
             <h1 class="font-semibold text-4xl">Our Services</h1>
           </div>
-          <div class="grid gap-10 justify-center md:grid-cols-2 lg:grid-cols-3 ">
+          <div class="grid gap-10 justify-center md:grid-cols-2 lg:grid-cols-3">
             <article class="flex gap-4">
               <div class="size-[75px]">
                 <img src="./images/service1.png" alt="serviceImage" />
               </div>
               <div class="space-y-4">
                 <h3 class="font-semibold text-2xl">Lighting Design</h3>
-                <p class="text-[#545454] font-medium">
-                  Achieve the perfect balance of <br> ambient, task, and accent
-                  lighting <br> for a functional atmosphere
+                <p class="text-grayHeader font-medium">
+                  Achieve the perfect balance of <br />
+                  ambient, task, and accent lighting <br />
+                  for a functional atmosphere
                 </p>
               </div>
             </article>
@@ -36,8 +73,8 @@
               <div class="space-y-4">
                 <h3 class="font-semibold text-2xl">Interior Design</h3>
                 <p class="text-[#545454] font-medium">
-                  From concept to completion, we <br>
-                  oversee every detail to bring your <br>
+                  From concept to completion, we <br />
+                  oversee every detail to bring your <br />
                   vision to life efficiently
                 </p>
               </div>
@@ -49,13 +86,12 @@
               <div class="space-y-4">
                 <h3 class="font-semibold text-2xl">Outdoor Design</h3>
                 <p class="text-[#545454] font-medium">
-                  Celebrate the changing seasons <br>
-                  with our seasonal outdoor decor <br>
+                  Celebrate the changing seasons <br />
+                  with our seasonal outdoor decor <br />
                   services
                 </p>
               </div>
             </article>
-
           </div>
         </div>
       </section>
@@ -130,5 +166,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>
