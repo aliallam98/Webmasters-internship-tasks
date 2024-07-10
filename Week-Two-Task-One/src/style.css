@@ -5,3 +5,7 @@
 html{
   scroll-behavior: smooth;
 }
+
+.container{
+  max-width: 1380px;
+}
