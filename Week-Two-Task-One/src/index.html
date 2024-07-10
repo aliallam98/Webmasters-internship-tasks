@@ -21,7 +21,9 @@
           <li class="text-grayHeader font-medium p-4">
             <a href="#newsletter">Contact</a>
           </li>
-          <li class="text-grayHeader font-medium p-4">Support</li>
+          <li class="text-grayHeader font-medium p-4">
+            <a href="#progress">Support</a>
+          </li>
         </ul>
 
         <div>
@@ -30,20 +32,32 @@
           >
             Sign Up
           </button>
-          <img
+          <!-- <img
             src="./images/menu.png"
             alt="menuIcon"
             id="menuButton"
             class="menu-icon lg:hidden size-8"
-          />
+          /> -->
+            <div class="lg:hidden space-y-2" id="menuButton">
+            <span class=" block w-10 h-1 bg-black transition duration-500" id="firstSpan"></span>
+            <span class=" block w-10 h-1 bg-black transition duration-500 origin-bottom-left " id="secondSpan"></span>
+          </div>
         </div>
       </nav>
-      <nav class="hidden" id="mobNav">
-        <ul class="transition flex flex-col items-center gap-4">
-          <li class="text-black font-medium p-4">Home</li>
-          <li class="text-grayHeader font-medium p-4">Services</li>
-          <li class="text-grayHeader font-medium p-4">Contact</li>
-          <li class="text-grayHeader font-medium p-4">Support</li>
+      <nav class="absolute transition duration-500 top-20 w-full h-[60vh] pb-10 z-50 bg-white/10 backdrop-blur-md -translate-y-[800px]  shadow-sm " id="mobNav">
+        <ul class="flex flex-col items-center gap-4">
+          <li class="text-black font-medium p-4">
+            <a href="#home">Home</a>
+          </li>
+          <li class="text-grayHeader font-medium p-4">
+            <a href="#services">Services</a>
+          </li>
+          <li class="text-grayHeader font-medium p-4">
+            <a href="#newsletter">Contact</a>
+          </li>
+          <li class="text-grayHeader font-medium p-4">
+            <a href="#progress">Support</a>
+          </li>
           <button class="bg-black py-3 px-10 text-white rounded-md">
             Sign Up
           </button>
@@ -201,7 +215,7 @@
         </div>
       </section>
 
-      <section class="progress py-10 md:py-20">
+      <section class="progress py-10 md:py-20" id="progress">
         <div class="container grid lg:grid-cols-2 gap-10">
           <div class="flex flex-col gap-10 items-center">
             <h1
@@ -451,6 +465,10 @@
         </div>
       </div>
     </footer>
+
+    <div class="fixed bottom-8 md:bottom-12 right-8  md:right-12  size-12 md:size-16 p-4 bg-black text-white rounded-md cursor-pointer transition rotate-[180deg]" id="toTopButton">
+      <img src="./images/arrow-top-svgrepo-com (2).svg" alt="arrowIcon" class="w-full text-white">
+    </div>
 
     <script src="./script.js"></script>
   </body>

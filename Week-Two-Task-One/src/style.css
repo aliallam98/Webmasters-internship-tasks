@@ -5,7 +5,15 @@
 html{
   scroll-behavior: smooth;
 }
-
 .container{
   max-width: 1380px;
+}
+.show-menu{
+  transform: translateY(0);
+}
+.first-span{
+  transform: rotate(45deg);
+}
+.second-span{
+  transform: rotate(-45deg);
 }
