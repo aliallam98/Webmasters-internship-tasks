@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <link href="./dist/output.css" rel="stylesheet" />
     <title>Document</title>
   </head>
@@ -38,13 +38,22 @@
             id="menuButton"
             class="menu-icon lg:hidden size-8"
           /> -->
-            <div class="lg:hidden space-y-2" id="menuButton">
-            <span class=" block w-10 h-1 bg-black transition duration-500" id="firstSpan"></span>
-            <span class=" block w-10 h-1 bg-black transition duration-500 origin-bottom-left " id="secondSpan"></span>
+          <div class="lg:hidden space-y-2" id="menuButton">
+            <span
+              class="block w-10 h-1 bg-black transition duration-500"
+              id="firstSpan"
+            ></span>
+            <span
+              class="block w-10 h-1 bg-black transition duration-500 origin-bottom-left"
+              id="secondSpan"
+            ></span>
           </div>
         </div>
       </nav>
-      <nav class="absolute transition duration-500 top-20 w-full h-[60vh] pb-10 z-50 bg-white/10 backdrop-blur-md -translate-y-[800px]  shadow-sm " id="mobNav">
+      <nav
+        class="absolute transition duration-500 top-20 w-full h-[60vh] pb-10 z-50 bg-white/10 backdrop-blur-md -translate-y-[800px] shadow-sm"
+        id="mobNav"
+      >
         <ul class="flex flex-col items-center gap-4">
           <li class="text-black font-medium p-4">
             <a href="#home">Home</a>
@@ -356,11 +365,26 @@
             </div>
           </div>
           <div class="order-1 lg:order-2">
-            <h1 class="text-2xl md:text-3xl lg:text-5xl font-semibold text-center">What Our Customers <br> Say About Us</h1>
+            <h1
+              class="text-2xl md:text-3xl lg:text-5xl font-semibold text-center"
+            >
+              What Our Customers <br />
+              Say About Us
+            </h1>
           </div>
-          <div class="absolute  -bottom-14 left-1/2 -translate-x-1/2 lg:left-10 lg:-translate-x-0 flex gap-10" >
-            <img src="./images/arrowIcon.png" alt="arrowImage" class="rounded-md size-16 bg-gray-200/50 p-4 cursor-pointer">
-            <img src="./images/arrowIcon.png" alt="arrowImage" class="rounded-md rotate-180 size-16 bg-gray-200/50 p-4  cursor-pointer">
+          <div
+            class="absolute -bottom-14 left-1/2 -translate-x-1/2 lg:left-10 lg:-translate-x-0 flex gap-10"
+          >
+            <img
+              src="./images/arrowIcon.png"
+              alt="arrowImage"
+              class="rounded-md size-16 bg-gray-200/50 p-4 cursor-pointer"
+            />
+            <img
+              src="./images/arrowIcon.png"
+              alt="arrowImage"
+              class="rounded-md rotate-180 size-16 bg-gray-200/50 p-4 cursor-pointer"
+            />
           </div>
         </div>
       </div>
@@ -466,8 +490,15 @@
       </div>
     </footer>
 
-    <div class="fixed bottom-8 md:bottom-12 right-8  md:right-12  size-12 md:size-16 p-4 bg-black text-white rounded-md cursor-pointer transition rotate-[180deg]" id="toTopButton">
-      <img src="./images/arrow-top-svgrepo-com (2).svg" alt="arrowIcon" class="w-full text-white">
+    <div
+      class="fixed bottom-8 md:bottom-12 right-8 md:right-12 size-12 md:size-16 p-4 bg-black text-white rounded-md cursor-pointer transition rotate-[180deg]"
+      id="toTopButton"
+    >
+      <img
+        src="./images/arrow-top-svgrepo-com (2).svg"
+        alt="arrowIcon"
+        class="w-full text-white"
+      />
     </div>
 
     <script src="./script.js"></script>
